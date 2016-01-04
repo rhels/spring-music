@@ -1,8 +1,8 @@
 buildscript {
     repositories {
+        maven { url "http://ci.rhels.com:18081/content/groups/public/" }
         jcenter()
         mavenCentral()
-        maven { url "https://repo.spring.io/plugins-release" }
     }
 
     dependencies {
@@ -143,7 +143,7 @@ cloudfoundry {
     space = "development"
 
     file = file("${war.archivePath}")
-    uri = "spring-music-${randomWord}.cfapps.io"
+    uri = "spring-music-rhels.cfapps.io"
     memory = 512
     instances = 1
 
