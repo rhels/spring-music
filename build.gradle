@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url "http://ci.rhels.com:18081/content/groups/public/" }
+        maven { url "http://localhost:8081/content/groups/public/" }
         jcenter()
         mavenCentral()
     }
@@ -52,6 +52,7 @@ jar {
 }
 
 repositories {
+    maven { url "http://localhost:8081" }
     mavenCentral()
     maven { url "http://repo.spring.io/milestone" }
 }
